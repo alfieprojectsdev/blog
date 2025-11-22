@@ -16,6 +16,20 @@
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
 		rgba(var(--gray), 33%);
 }
+
+[data-theme="dark"] {
+	--accent: #6b7cff;
+	--accent-dark: #8a96ff;
+	--black: 240, 240, 245;
+	--gray: 150, 165, 195;
+	--gray-light: 45, 50, 65;
+	--gray-dark: 220, 225, 235;
+	--gray-gradient: rgba(var(--gray-light), 50%), #121218;
+	--box-shadow:
+		0 2px 6px rgba(0, 0, 0, 40%), 0 8px 24px rgba(0, 0, 0, 50%), 0 16px 32px
+		rgba(0, 0, 0, 50%);
+	--header-bg: #1a1a2e;
+}
 @font-face {
 	font-family: "Atkinson";
 	src: url("/fonts/atkinson-regular.woff") format("woff");
@@ -42,6 +56,7 @@ body {
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+	transition: background 0.3s ease, color 0.3s ease;
 }
 main {
 	width: 720px;
