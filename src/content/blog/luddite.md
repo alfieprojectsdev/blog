@@ -1,5 +1,5 @@
 ---
-title: "On Luddites and Vibe Coding"
+title: "Luddite"
 description: "Tools don't eliminate the need for depth; they just make the gap between intent and execution feel deceptively tiny."
 pubDate: "Nov 20 2024"
 ---
