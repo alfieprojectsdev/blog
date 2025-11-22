@@ -30,6 +30,9 @@
 		rgba(0, 0, 0, 50%);
 	--header-bg: #1a1a2e;
 }
+[data-theme="dark"] body {
+	background-color: #121218;
+}
 @font-face {
 	font-family: "Atkinson";
 	src: url("/fonts/atkinson-regular.woff") format("woff");
@@ -49,6 +52,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
+	background-color: #fff;
 	background: linear-gradient(var(--gray-gradient)) no-repeat;
 	background-size: 100% 600px;
 	word-wrap: break-word;
