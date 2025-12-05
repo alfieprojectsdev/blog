@@ -25,3 +25,4 @@ pnpm-debug.log*
 .vercel
 .claude/agents/architect.md.old 
 .claude/agents/debugger.md.old
+.claude/prompt-engineering.md
