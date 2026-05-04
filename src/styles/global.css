@@ -1,158 +1,162 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
-		rgba(var(--gray), 33%);
+	--font-display: 'Cormorant Garamond', Georgia, serif;
+	--font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+	--ink: #141412;
+	--paper: #f8f6f2;
+	--cream: #ede9e2;
+	--charcoal: #3a3835;
+	--ash: #7e7a75;
+	--mist: #dedad3;
+	--hero-bg: #191917;
+	--accent: #1e6b7a;
+	--accent-dark: #155564;
+
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-[data-theme="dark"] {
-	--accent: #6b7cff;
-	--accent-dark: #8a96ff;
-	--black: 240, 240, 245;
-	--gray: 150, 165, 195;
-	--gray-light: 45, 50, 65;
-	--gray-dark: 220, 225, 235;
-	--gray-gradient: rgba(var(--gray-light), 50%), #121218;
-	--box-shadow:
-		0 2px 6px rgba(0, 0, 0, 40%), 0 8px 24px rgba(0, 0, 0, 50%), 0 16px 32px
-		rgba(0, 0, 0, 50%);
-	--header-bg: #1a1a2e;
+*, *::before, *::after {
+	box-sizing: border-box;
 }
-[data-theme="dark"] body {
-	background-color: #121218;
-}
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
+
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: var(--font-body);
+	background: var(--paper);
+	color: var(--charcoal);
+	font-size: 18px;
+	line-height: 1.7;
 	margin: 0;
 	padding: 0;
-	text-align: left;
-	background-color: #fff;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+	-webkit-font-smoothing: antialiased;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
-	transition: background 0.3s ease, color 0.3s ease;
 }
+
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 3rem 1.5rem;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
-	line-height: 1.2;
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-display);
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	line-height: 1.15;
+	color: var(--ink);
+	margin: 0 0 0.6rem 0;
 }
-h1 {
-	font-size: 3.052em;
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); font-style: italic; font-weight: 300; }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+
+strong, b {
+	font-weight: 600;
+	color: var(--ink);
 }
-h2 {
-	font-size: 2.441em;
-}
-h3 {
-	font-size: 1.953em;
-}
-h4 {
-	font-size: 1.563em;
-}
-h5 {
-	font-size: 1.25em;
-}
-strong,
-b {
-	font-weight: 700;
-}
+
 a {
 	color: var(--accent);
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: 3px;
+	transition: text-decoration-color 0.15s var(--ease-out), color 0.15s var(--ease-out);
 }
+
 a:hover {
-	color: var(--accent);
+	color: var(--accent-dark);
+	text-decoration-color: currentColor;
 }
+
 p {
-	margin-bottom: 1em;
+	margin-bottom: 1.25rem;
 }
+
 .prose p {
-	margin-bottom: 2em;
+	margin-bottom: 1.6rem;
+	max-width: 65ch;
 }
+
+.prose h2,
+.prose h3 {
+	margin-top: 2.5rem;
+	margin-bottom: 0.75rem;
+}
+
 textarea {
 	width: 100%;
 	font-size: 16px;
+	font-family: var(--font-body);
 }
+
 input {
 	font-size: 16px;
+	font-family: var(--font-body);
 }
+
 table {
 	width: 100%;
+	border-collapse: collapse;
 }
+
+th, td {
+	padding: 0.5rem 0.75rem;
+	border-bottom: 1px solid var(--mist);
+	text-align: left;
+	font-size: 0.9375rem;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 8px;
+	border-radius: 4px;
 }
+
 code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
+	font-size: 0.875em;
+	padding: 2px 6px;
+	background: var(--cream);
+	border-radius: 3px;
+	color: var(--ink);
 }
+
 pre {
 	padding: 1.5em;
-	border-radius: 8px;
+	border-radius: 4px;
+	background: var(--hero-bg);
+	overflow-x: auto;
 }
+
 pre > code {
 	all: unset;
+	color: var(--paper);
+	font-size: 0.875rem;
 }
+
 blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 1.333em;
+	border-left: 2px solid var(--accent);
+	padding: 0.25em 0 0.25em 1.25em;
+	margin: 1.5em 0;
+	color: var(--ash);
+	font-family: var(--font-display);
+	font-style: italic;
+	font-size: 1.2rem;
+	line-height: 1.5;
 }
+
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid var(--mist);
+	margin: 2.5rem 0;
 }
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
+
+*:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
 }
 
 .sr-only {
@@ -163,12 +167,17 @@ hr {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
 	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
 	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+	body {
+		font-size: 17px;
+	}
+
+	main {
+		padding: 2rem 1rem;
+	}
 }

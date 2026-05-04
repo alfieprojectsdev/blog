@@ -3,14 +3,38 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()}
+	<div class="footer-inner">
+		<span>&copy; {today.getFullYear()} Alfie Pelicano</span>
+		<a href="https://ithinkandicode.space" rel="noopener noreferrer">Portfolio</a>
+	</div>
 </footer>
+
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-		transition: background 0.3s ease, color 0.3s ease;
+		background: var(--hero-bg);
+		padding: 2rem 1.5rem;
+		margin-top: 4rem;
+	}
+
+	.footer-inner {
+		max-width: 720px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 0.8125rem;
+		color: rgba(248, 246, 242, 0.4);
+		gap: 1rem;
+	}
+
+	.footer-inner a {
+		color: rgba(248, 246, 242, 0.4);
+		text-decoration: none;
+		transition: color 0.15s;
+	}
+
+	.footer-inner a:hover {
+		color: rgba(248, 246, 242, 0.8);
+		text-decoration-color: transparent;
 	}
 </style>
