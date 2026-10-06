@@ -1,27 +1,28 @@
 ---
-title: "Luddite"
-description: "Tools don't democratize outcomes. They just make the gap between intent and execution feel deceptively tiny"
+title: "I'm not a Luddite, and neither were the Luddites"
+description: "Tools don't democratize outcomes. They just make the gap between intent and execution feel deceptively tiny."
 pubDate: "Mar 19 2026"
+updatedDate: "Oct 6 2026"
 ---
 
-If “vibe coding” sounds like a magic shortcut, that’s because it’s being sold as one. But it's the exact same illusion we fell for when we thought typewriters would turn everyone into novelists. They didn’t. Markdown didn’t. And LLMs trained on mountains of code aren’t going to transform the general population into seasoned software engineers overnight. 
+"Vibe coding" is being sold as a magic shortcut, and I'm going to complain about it for a few hundred words. First, a disclosure: I got faster with these tools, so a person who benefits from them is telling you they won't help everyone. Squint accordingly.
 
-The democratization of tools does not equal the democratization of outcomes. Everyone can buy a hammer, but most people still hire contractors. 
+Typewriters didn't turn everyone into novelists. Markdown didn't either. (Typewriters did produce a staggering number of novels, most of them bad, which is closer to my point than I'd like.) LLMs trained on mountains of code won't turn the general population into software engineers overnight.
 
-The trap of generative AI is that it makes the gap between intent and execution feel deceptively tiny. When a system confidently fills in the boilerplate for you, it’s dangerously easy to confuse fluency with understanding. The machine nails the trivial parts, and you start assuming the hard parts were never that hard to begin with. You get a prototype that *looks* like a product—right up until you actually have to deploy and maintain it. 
+Everyone can buy a hammer, but most people still hire contractors. Except people also watch one YouTube video and tile their own bathroom, and sometimes it turns out fine. I picked a shaky metaphor and I'm keeping it, because the hammer line is the part you'll quote.
 
-When you suddenly find a tool that makes you 10x faster, the immediate, instinctual fear is, "If everyone has this, I lose my edge." And if you express any caution about this shift, the internet is quick to slap you with the "Luddite" label, dismissing you as nostalgic or technophobic. 
+The trap is that generative AI makes the gap between intent and execution feel tiny. The model fills in the boilerplate, and it's easy to mistake fluency for understanding. You get a prototype that *looks* like a product until you have to deploy it and keep it alive.
 
-But that fear ignores the reality of human behavior. It ignores what actually goes into building functional systems. 
+When a tool makes you ten times faster, the first fear is "if everyone has this, I lose my edge." Express any caution about that and someone calls you a Luddite. The actual Luddites were skilled textile workers in early 1800s England, and their fight was over wages and who profited from the machines. So the insult is aimed at the wrong crowd, and given the fear I just described, it fits me better than I'd like.
 
-First, there is the reality that **frustration is the real architecture.** A tool is useless if you don't know what to point it at. The people who get the most out of breakthrough technologies are the ones who have spent years wrestling with intractable problems, legacy bottlenecks, and manual grunt work. That deep, simmering frustration provides the exact blueprint for what needs to be built. If you hand an advanced coding tool to someone who hasn't felt that pain, they will just use it to build trivial things. The competitive edge isn't the tool; it's the deeply understood problem.
+Here's my theory: frustration is the real architecture. The people who get the most out of a new tool are the ones who spent years on legacy bottlenecks and manual grunt work, and that frustration tells them what to build. I'll admit that line sounds like a poster in a co-working space. Years of staring at a bottleneck give you opinions. They don't guarantee taste. Some people stare at the crooked house for twenty years and never learn carpentry.
 
-Second, there is the **execution gap.** Having the capacity to generate code and having the motivation to see a system through to production are entirely different universes. Building cohesive software requires pushing through failure, iterating, testing, and refining edge cases. Most people, even when handed the ultimate tool, will stop at the first sign of friction. The drive to bridge the gap between "this is a cool idea" and "this is a deployed, functioning solution" is incredibly rare.
+Then there's the execution gap. Generating code and getting a system into production are different jobs. Production means failing, testing and chasing edge cases, and most people quit at the first friction, whatever tool they're holding. I'd like to say I'm in the minority. I'd also like to be taller.
 
-Finally, **domain context is the ultimate moat.** Software doesn't exist in a vacuum. To build something highly functional—whether it's an automated spatial analysis engine, a B2B marketplace, or a constraint-solving math grid—you have to understand the physical and logical constraints of the environment you are building for. The LLM doesn't know the domain; you do. 
+"Domain context is the moat" is what every LinkedIn consultant says right before pitching a course, so here it is without the moat. If you understand the constraints of a spatial analysis engine, a B2B marketplace or a constraint-solving math grid, the model's wrong answers look wrong to you. That's the whole benefit. It also cuts the other way: if you only think you understand the domain, the model will agree with you cheerfully.
 
-Vibe coding won’t make everyone a developer. It will simply empower the people who approach it with intention, discipline, and a baseline of technical intuition. You can hand off the boilerplate without surrendering responsibility. You can use the machine’s speed to amplify your judgment, not outsource it. 
+Vibe coding will make people who understand their problem faster. It will also make people who don't understand it confidently wrong at scale. You can hand off the boilerplate and still own the result.
 
-If this new era of frictionless creation makes you uneasy, good. Let that tension sharpen you. Let it force you to deeply understand the parts the model can fake but not solve. 
+If this makes you uneasy, good. Use that to learn the parts the model can fake but can't solve.
 
-Your edge is never the hammer. It's knowing exactly where to strike the nail, because you've spent years staring at the crooked house.
+Your edge is never the hammer. It's knowing where to strike, because you've spent years staring at the crooked house. Or you've stared so long you've stopped noticing it's crooked. Ask someone who just walked in.
